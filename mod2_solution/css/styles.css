@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;							
+}
+
+h1 {
+	font-size: 1.75em;
+	text-align: center;	
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+p {  
+  border: 1px solid black;   
+  border-radius: 5px;   
+  background-color: lightgray;
+}
+
+.menu_box {
+  margin: 10px;
+}
+
+.dish_title {
+	width: 100px;
+ 	position: absolute;
+ 	top: 10px;
+ 	right: 10px;
+  font-size: 1.25em;
+ 	text-align: center;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+}
+
+.dish_text {  
+  padding: 2.2em 0.5em 0.5em 0.5em;
+  width: 100%;
+}
+
+#dish_title1 {	
+	background-color: pink;
+}
+
+#dish_title2 {	
+	background-color: red;
+	color: white;
+}
+
+#dish_title3 {	
+	background-color: yellow;
+}
+
+/* Simple Responsive Framework */
+.row {
+  width: 100%;  
+}
+
+/* Setting float and position properties for columns */
+.col-lg-4, .col-md-6, .col-md-12, .col-sm-12 {
+  float: left;     
+  position: relative;   
+}
+
+/* Setting column width in case of large devices (desktop) */
+@media (min-width: 992px) {
+  .col-lg-4 {    
+    width: 33.33%;   
+  }  
+}
+
+/* Setting column width in case of medium devices (tablet) */
+@media (min-width: 768px) and (max-width: 991px) { 
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/* Setting column width in case of small devices (mobile) */
+@media (max-width: 767px) {
+  .col-sm-12 { 
+    width: 100%;
+  } 
+}
